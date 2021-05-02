@@ -9,19 +9,40 @@
 /* Begin PBXBuildFile section */
 		FB6A84812639B3B2005A933D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A84802639B3B2005A933D /* AppDelegate.swift */; };
 		FB6A84832639B3B2005A933D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A84822639B3B2005A933D /* ContentView.swift */; };
-		FB6A84852639B3B2005A933D /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = FB6A84842639B3B2005A933D /* Experience.rcproject */; };
 		FB6A84872639B3B2005A933D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6A84862639B3B2005A933D /* Assets.xcassets */; };
 		FB6A848A2639B3B2005A933D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6A84892639B3B2005A933D /* Preview Assets.xcassets */; };
+		FB6A84922639B3CC005A933D /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A84912639B3CC005A933D /* StartView.swift */; };
+		FB6A84962639B64B005A933D /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB6A84932639B3F4005A933D /* SF-Pro-Text-Bold.otf */; };
+		FB6A84982639B84C005A933D /* VolumentalFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A84972639B84C005A933D /* VolumentalFonts.swift */; };
+		FB6A849B2639B8A4005A933D /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB6A84992639B8A4005A933D /* SF-Pro-Text-Semibold.otf */; };
+		FB6A849C2639B8A4005A933D /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB6A849A2639B8A4005A933D /* SF-Pro-Text-Regular.otf */; };
+		FB6A849F2639B8E8005A933D /* left.obj in Resources */ = {isa = PBXBuildFile; fileRef = FB6A849E2639B8E8005A933D /* left.obj */; };
+		FB6A84A22639BA45005A933D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB6A84A42639BA45005A933D /* Localizable.strings */; };
+		FB6A84A82639C0FF005A933D /* quantAppIntroImage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FB6A84A72639C0FF005A933D /* quantAppIntroImage.pdf */; };
+		FB6A84AA2639C81F005A933D /* HelperViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A84A92639C81F005A933D /* HelperViews.swift */; };
+		FB6A84AE2639E568005A933D /* left.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB6A84AD2639E568005A933D /* left.usdz */; };
+		FB6A84D3263BEC3C005A933D /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A84D2263BEC3C005A933D /* HostingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB6A847D2639B3B2005A933D /* VolumentalTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolumentalTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6A84802639B3B2005A933D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB6A84822639B3B2005A933D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FB6A84842639B3B2005A933D /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		FB6A84862639B3B2005A933D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB6A84892639B3B2005A933D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB6A848B2639B3B2005A933D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB6A84912639B3CC005A933D /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		FB6A84932639B3F4005A933D /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		FB6A84972639B84C005A933D /* VolumentalFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumentalFonts.swift; sourceTree = "<group>"; };
+		FB6A84992639B8A4005A933D /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		FB6A849A2639B8A4005A933D /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		FB6A849E2639B8E8005A933D /* left.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = left.obj; sourceTree = "<group>"; };
+		FB6A84A32639BA45005A933D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FB6A84A52639BA49005A933D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FB6A84A72639C0FF005A933D /* quantAppIntroImage.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = quantAppIntroImage.pdf; sourceTree = "<group>"; };
+		FB6A84A92639C81F005A933D /* HelperViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperViews.swift; sourceTree = "<group>"; };
+		FB6A84AD2639E568005A933D /* left.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = left.usdz; path = VolumentalTask/ModelAssets/left.usdz; sourceTree = SOURCE_ROOT; };
+		FB6A84D2263BEC3C005A933D /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +75,16 @@
 		FB6A847F2639B3B2005A933D /* VolumentalTask */ = {
 			isa = PBXGroup;
 			children = (
+				FB6A84A62639C0E8005A933D /* Images */,
+				FB6A849D2639B8CC005A933D /* ModelAssets */,
 				FB6A84802639B3B2005A933D /* AppDelegate.swift */,
 				FB6A84822639B3B2005A933D /* ContentView.swift */,
-				FB6A84842639B3B2005A933D /* Experience.rcproject */,
+				FB6A84912639B3CC005A933D /* StartView.swift */,
+				FB6A84D2263BEC3C005A933D /* HostingController.swift */,
+				FB6A84A92639C81F005A933D /* HelperViews.swift */,
+				FB6A84A42639BA45005A933D /* Localizable.strings */,
+				FB6A84972639B84C005A933D /* VolumentalFonts.swift */,
+				FB6A84952639B60D005A933D /* Fonts */,
 				FB6A84862639B3B2005A933D /* Assets.xcassets */,
 				FB6A848B2639B3B2005A933D /* Info.plist */,
 				FB6A84882639B3B2005A933D /* Preview Content */,
@@ -70,6 +98,33 @@
 				FB6A84892639B3B2005A933D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB6A84952639B60D005A933D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FB6A849A2639B8A4005A933D /* SF-Pro-Text-Regular.otf */,
+				FB6A84992639B8A4005A933D /* SF-Pro-Text-Semibold.otf */,
+				FB6A84932639B3F4005A933D /* SF-Pro-Text-Bold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FB6A849D2639B8CC005A933D /* ModelAssets */ = {
+			isa = PBXGroup;
+			children = (
+				FB6A84AD2639E568005A933D /* left.usdz */,
+				FB6A849E2639B8E8005A933D /* left.obj */,
+			);
+			path = ModelAssets;
+			sourceTree = "<group>";
+		};
+		FB6A84A62639C0E8005A933D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FB6A84A72639C0FF005A933D /* quantAppIntroImage.pdf */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +168,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = FB6A84742639B3B2005A933D;
 			productRefGroup = FB6A847E2639B3B2005A933D /* Products */;
@@ -129,8 +185,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB6A849F2639B8E8005A933D /* left.obj in Resources */,
+				FB6A849B2639B8A4005A933D /* SF-Pro-Text-Semibold.otf in Resources */,
+				FB6A84AE2639E568005A933D /* left.usdz in Resources */,
+				FB6A849C2639B8A4005A933D /* SF-Pro-Text-Regular.otf in Resources */,
+				FB6A84A22639BA45005A933D /* Localizable.strings in Resources */,
 				FB6A848A2639B3B2005A933D /* Preview Assets.xcassets in Resources */,
 				FB6A84872639B3B2005A933D /* Assets.xcassets in Resources */,
+				FB6A84962639B64B005A933D /* SF-Pro-Text-Bold.otf in Resources */,
+				FB6A84A82639C0FF005A933D /* quantAppIntroImage.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,13 +204,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB6A84AA2639C81F005A933D /* HelperViews.swift in Sources */,
+				FB6A84982639B84C005A933D /* VolumentalFonts.swift in Sources */,
 				FB6A84832639B3B2005A933D /* ContentView.swift in Sources */,
+				FB6A84D3263BEC3C005A933D /* HostingController.swift in Sources */,
 				FB6A84812639B3B2005A933D /* AppDelegate.swift in Sources */,
-				FB6A84852639B3B2005A933D /* Experience.rcproject in Sources */,
+				FB6A84922639B3CC005A933D /* StartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB6A84A42639BA45005A933D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB6A84A32639BA45005A933D /* en */,
+				FB6A84A52639BA49005A933D /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FB6A848C2639B3B2005A933D /* Debug */ = {
