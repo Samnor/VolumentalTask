@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB6A84812639B3B2005A933D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A84802639B3B2005A933D /* AppDelegate.swift */; };
-		FB6A84832639B3B2005A933D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A84822639B3B2005A933D /* ContentView.swift */; };
+		FB6A84832639B3B2005A933D /* ARContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A84822639B3B2005A933D /* ARContentView.swift */; };
 		FB6A84872639B3B2005A933D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6A84862639B3B2005A933D /* Assets.xcassets */; };
 		FB6A848A2639B3B2005A933D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6A84892639B3B2005A933D /* Preview Assets.xcassets */; };
 		FB6A84922639B3CC005A933D /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A84912639B3CC005A933D /* StartView.swift */; };
@@ -22,12 +22,13 @@
 		FB6A84AA2639C81F005A933D /* HelperViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A84A92639C81F005A933D /* HelperViews.swift */; };
 		FB6A84AE2639E568005A933D /* left.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB6A84AD2639E568005A933D /* left.usdz */; };
 		FB6A84D3263BEC3C005A933D /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A84D2263BEC3C005A933D /* HostingController.swift */; };
+		FB6A84D5263FD757005A933D /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A84D4263FD757005A933D /* UserState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB6A847D2639B3B2005A933D /* VolumentalTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolumentalTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6A84802639B3B2005A933D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB6A84822639B3B2005A933D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB6A84822639B3B2005A933D /* ARContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARContentView.swift; sourceTree = "<group>"; };
 		FB6A84862639B3B2005A933D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB6A84892639B3B2005A933D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB6A848B2639B3B2005A933D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 		FB6A84A92639C81F005A933D /* HelperViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperViews.swift; sourceTree = "<group>"; };
 		FB6A84AD2639E568005A933D /* left.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = left.usdz; path = VolumentalTask/ModelAssets/left.usdz; sourceTree = SOURCE_ROOT; };
 		FB6A84D2263BEC3C005A933D /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		FB6A84D4263FD757005A933D /* UserState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +80,9 @@
 				FB6A84A62639C0E8005A933D /* Images */,
 				FB6A849D2639B8CC005A933D /* ModelAssets */,
 				FB6A84802639B3B2005A933D /* AppDelegate.swift */,
-				FB6A84822639B3B2005A933D /* ContentView.swift */,
+				FB6A84822639B3B2005A933D /* ARContentView.swift */,
 				FB6A84912639B3CC005A933D /* StartView.swift */,
+				FB6A84D4263FD757005A933D /* UserState.swift */,
 				FB6A84D2263BEC3C005A933D /* HostingController.swift */,
 				FB6A84A92639C81F005A933D /* HelperViews.swift */,
 				FB6A84A42639BA45005A933D /* Localizable.strings */,
@@ -206,9 +209,10 @@
 			files = (
 				FB6A84AA2639C81F005A933D /* HelperViews.swift in Sources */,
 				FB6A84982639B84C005A933D /* VolumentalFonts.swift in Sources */,
-				FB6A84832639B3B2005A933D /* ContentView.swift in Sources */,
+				FB6A84832639B3B2005A933D /* ARContentView.swift in Sources */,
 				FB6A84D3263BEC3C005A933D /* HostingController.swift in Sources */,
 				FB6A84812639B3B2005A933D /* AppDelegate.swift in Sources */,
+				FB6A84D5263FD757005A933D /* UserState.swift in Sources */,
 				FB6A84922639B3CC005A933D /* StartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

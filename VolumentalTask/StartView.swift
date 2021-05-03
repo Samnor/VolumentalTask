@@ -8,18 +8,17 @@
 import SwiftUI
 
 struct StartView: View {
-    @State var showARView: Bool = false
+    @ObservedObject var userState = UserState(showARView: false)
     var body: some View {
-        
         ZStack {
-            ContentView(showARView: $showARView)
-            if showARView == false {
+            ARContentView(showARView: $userState.showARView)
+            if userState.showARView == false {
                 Rectangle()
-                    .fill(Color.primary)
-                    .edgesIgnoringSafeArea(.all)
+                .fill(Color.primary)
+                .edgesIgnoringSafeArea(.all)
                 StartBackgroundView()
                 StartTextView()
-                StartButtonView(showARView: $showARView)
+                StartButtonView(showARView: $userState.showARView)
             }
         }
     }
@@ -36,8 +35,8 @@ struct StartTextView: View {
             .foregroundColor(.black)
             .fixedSize(horizontal: true, vertical: false)
             Text("A 3D foot scan tech let's you see your feet beyond shoe size - and helps us find you the perfect fit.")
-                .font(Font.custom(VolumentalFonts.regular, size: 14))
-                .foregroundColor(.black)
+            .font(Font.custom(VolumentalFonts.regular, size: 14))
+            .foregroundColor(.black)
         }
         .padding(.horizontal, 30)
     }
@@ -55,14 +54,14 @@ struct StartButtonView: View {
         VStack {
             Spacer()
             Button("GET STARTED WITH INVITE LINK", action: {
-                showARView = true
+                showARView.toggle()
             })
-                .padding(.horizontal, 40)
-                .padding(.vertical, 20)
-                .background(Color.black)
-                .foregroundColor(Color.white)
-                .font(Font.custom(VolumentalFonts.semibold, size: 12))
-                .cornerRadius(24.0)
+            .padding(.horizontal, 40)
+            .padding(.vertical, 20)
+            .background(Color.black)
+            .foregroundColor(Color.white)
+            .font(Font.custom(VolumentalFonts.semibold, size: 12))
+            .cornerRadius(24.0)
         }
     }
 }
@@ -74,8 +73,8 @@ struct StartBackgroundView: View {
             HStack {
                 RectangleClear()
                 Image("StartIntroImage")
-                    .resizable()
-                    .scaledToFill()
+                .resizable()
+                .scaledToFill()
             }
             RectangleClear()
             RectangleClear()

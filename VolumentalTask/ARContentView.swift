@@ -10,9 +10,9 @@ import RealityKit
 import ARKit
 import Combine
 
-struct ContentView : View {
-    @Binding var showARView: Bool
+struct ARContentView : View {
     @State var modelIsLocked: Bool = false
+    @Binding var showARView: Bool
     var body: some View {
         ZStack {
             ARViewContainer(
@@ -20,54 +20,61 @@ struct ContentView : View {
                 showARView: $showARView
             )
             .edgesIgnoringSafeArea(.all)
-            VStack(alignment: .leading){
-                HStack(alignment: .top) {
-                    Button(action: {
-                        withAnimation(.spring()){
-                            self.modelIsLocked = false
-                            self.showARView = false
-                        }
-                    }, label: {
-                        HStack {
-                            Image(systemName:"return")
-                            Text("Return")
-                        }
-                    })
-                    .padding()
-                    .background(Color.secondary)
-                    .foregroundColor(Color.primary)
-                    .cornerRadius(20)
-                    Spacer()
-                }
-                Spacer()
-            }
-            VStack {
-                Spacer()
-                Button(action: {
-                    self.modelIsLocked = !self.modelIsLocked
-                }, label: {
-                    HStack {
-                        if self.modelIsLocked {
-                            Image(systemName: "lock")
-                            Text("Locked Model")
-                        } else {
-                            Image(systemName: "lock.open")
-                            Text("Unlocked Model")
-                        }
-                    }
-                    .padding()
-                    .background(Color.secondary)
-                    .foregroundColor(Color.primary)
-                    .cornerRadius(20)
-                    .animation(.spring())
-                })
-            }
+            ARUserInterface(modelIsLocked: $modelIsLocked,
+                            showARView: $showARView)
+            
         }
-        
     }
 }
 
-
+struct ARUserInterface: View {
+    @Binding var modelIsLocked: Bool
+    @Binding var showARView: Bool
+    var body: some View {
+        VStack(alignment: .leading){
+            HStack(alignment: .top) {
+                Button(action: {
+                    withAnimation(.spring()){
+                        self.modelIsLocked = false
+                        self.showARView.toggle()
+                    }
+                }, label: {
+                    HStack {
+                        Image(systemName:"return")
+                        Text("Return")
+                    }
+                })
+                .padding()
+                .background(Color.secondary)
+                .foregroundColor(Color.primary)
+                .cornerRadius(20)
+                Spacer()
+            }
+            Spacer()
+        }
+        VStack {
+            Spacer()
+            Button(action: {
+                self.modelIsLocked.toggle()
+            }, label: {
+                HStack {
+                    if self.modelIsLocked {
+                        Image(systemName: "lock")
+                        Text("Locked Model")
+                    } else {
+                        Image(systemName: "lock.open")
+                        Text("Unlocked Model")
+                    }
+                }
+                .padding()
+                .background(Color.secondary)
+                .foregroundColor(Color.primary)
+                .cornerRadius(20)
+                .animation(.spring())
+            })
+        }
+    }
+}
 
 struct ARViewContainer: UIViewRepresentable {
     
@@ -88,7 +95,7 @@ struct ARViewContainer: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {
-        if showARView == false {
+        if self.showARView == false {
             self.resetARView(arView: uiView)
         }
     }
@@ -115,7 +122,7 @@ struct ARViewContainer: UIViewRepresentable {
         init(arView: ARView, isModelLocked: Binding<Bool>) {
             self.arView = arView
             self.isModelLocked = isModelLocked
-            self.modelSubscription = Entity.loadModelAsync(named: "left")   // From the app's main bundle.
+            self.modelSubscription = Entity.loadModelAsync(named: "left")
                 .sink(receiveCompletion: { loadCompletion in
                     print("loadModelAsync subscription complete")
                 }, receiveValue: { entity in
@@ -151,15 +158,6 @@ struct ARViewContainer: UIViewRepresentable {
         }
     }
 }
-
-#if DEBUG
-struct ContentView_Previews : PreviewProvider {
-    @State static var showARView = false
-    static var previews: some View {
-        ContentView(showARView: $showARView)
-    }
-}
-#endif
 
 extension ARView: ARCoachingOverlayViewDelegate {
     func addCoaching() {
